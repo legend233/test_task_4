@@ -27,10 +27,5 @@ class Requisite(db.Model):
 def hello():
     return "Hello, World!"
 
-@app.route("/create")
-def create():
-    db.create_all()
-    return "ok"
-
 if __name__ == "__main__":
     app.run(debug=True)
